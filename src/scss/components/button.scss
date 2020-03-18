@@ -1,0 +1,52 @@
+.button{
+    .card-btn, button,a{
+        background-color: transparent;
+        border: 3px solid $custom-pink;
+        color: $custom-pink;
+        cursor: pointer;
+        display: inline-block;
+        font-family: $font-aveNext-bold;
+        letter-spacing: 1.4px;
+        line-height: 19px;
+        width: 100%;
+        min-width: 140px;
+        padding: 14px 20px 10px;
+        position: relative;
+        text-align:center;
+        font-size: 12px;
+        text-transform: uppercase;
+        z-index: 1;
+        @include transition(all 0.15s ease-in);
+        &:hover, &:focus{
+            border-color: $primary-black;
+            color: $primary-black;
+            &:before {
+                border-left: 3px solid $primary-black;
+                color: $primary-black;
+            }
+        }
+    }
+    &-primary{
+        @extend .button;
+        .card-btn,button,a{
+            color: $white;
+            border: 3px solid $white;
+            &:hover, &:focus{
+                border-color: $custom-pink;
+                color: $custom-pink;
+            }
+        }
+    }
+    &-tertiary {
+        button,a{
+            background-color: $custom-pink;
+            border: 1px solid $custom-pink;
+            color: $white;
+            &:hover {
+                background-color: $white;
+                border: 1px solid $custom-pink;
+                color: $custom-pink;
+            }
+        }
+    }
+}

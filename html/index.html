@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1.0" />
+	<!-- <link rel="shortcut icon"href="img/nl-favicon.png"/> -->
+	<title>Sign In</title>
+	<link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+	<!-- modernizr included -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<style>
+		body{
+			background-color: #fff;
+		}  
+		.render-blk{ opacity:0; }
+	</style>
+	<script>
+		var cssArr = ['css/app.css'];
+		for(var i = 0; i < cssArr.length; i++) {
+			var link = document.createElement('link');
+			link.setAttribute('rel', 'stylesheet');
+			link.setAttribute('type', 'text/css');
+			link.setAttribute('href', cssArr[i]);
+			document.getElementsByTagName('head')[0].appendChild(link);
+		}
+	</script>
+	<noscript>
+		<style media="screen">
+			.render-blk{ opacity: 1; }	
+		</style>
+	</noscript>
+</head>
+	<body>
+		<div class="render-blk">
+			<header class="header">
+              <div class="header-wrapper">
+               <div class="container">
+                  <div class="hamburger responsive-mobile">
+                     <img class="hamburger-black" alt="hamburger-gold" src="images/hamburger.svg" />
+                     <img class="hamburger-white" alt="hamburger-gold" src="images/hamburger.svg" />
+                  </div>
+                  <a class="logo" href="index.html">
+                     <img alt="images" class="desk-logo active" src="images/Logo.svg" /> 
+                     <img alt="images" class="mobile-logo" src="images/mobile-logo.svg">
+                     <img alt="images" class="mobile-logo white" src="images/logo-white.png" /> 
+                  </a>
+                  <div class="menu-close"><i class="fa fa-close"></i></div>
+                  <div class="nav-bar text-right">
+                     <ul>
+                        <li>
+                           <a href="https://www.jawamotorcycles.com/motorcycles/">Motorcycles</a> 
+                        </li>
+                        <li>
+                           <a href="https://www.jawamotorcycles.com/gear/">Gear</a>
+                        </li>
+                        <li class="sub-menu">
+                           <a href="javascript:void(0)">Kommuniti</a> 
+                           <div class="arrow-blk">&nbsp;</div>
+                           <div class="sub-menu-wrapper">
+                              <div class="container">
+                                 <div class="row">
+                                    <div class="col-3">
+                                       <a class="menu-card" href="https://www.jawamotorcycles.com/kommuniti/">
+                                          <img alt="" src="images/menu/kommuniti.png" />
+                                          <div class="menu-card-caption">
+                                             <span class="menu-card-link">Kommuniti</span>
+                                          </div>
+                                       </a>                                        
+                                    </div>
+                                    <div class="col-3">
+                                       <a class="menu-card" href="https://www.jawamotorcycles.com/kommuniti/clubs/">
+                                          <img alt="" src="images/menu/clubs.png"> 
+                                          <div class="menu-card-caption">
+                                             <span class="menu-card-link">Clubs</span>
+                                          </div>
+                                       </a>                                        
+                                    </div>
+                                    <div class="col-3">
+                                       <a class="menu-card" href="https://www.jawamotorcycles.com/kommuniti/members/">
+                                          <img alt="" src="images/kommuniti-members.jpg" /> 
+                                          <div class="menu-card-caption">
+                                             <span class="menu-card-link" >Members</span>
+                                          </div>
+                                       </a>                                       
+                                    </div>
+                                    <div class="col-3">
+                                       <a class="menu-card" href="https://www.jawamotorcycles.com/kommuniti/discuss/">
+                                          <img alt="" src="images/menu/discuss.png" /> 
+                                          <div class="menu-card-caption">
+                                             <span class="menu-card-link">Discuss</span>
+                                          </div>
+                                       </a>                                        
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-3">
+                                       <a class="menu-card" href="https://www.jawamotorcycles.com/kommuniti/mechanics-directory/">
+                                          <img alt="" src="images/menu/mechanics.png" /> 
+                                          <div class="menu-card-caption">
+                                             <span class="menu-card-link" >Mechanics Directory</span>
+                                          </div>
+                                       </a>                                        
+                                    </div>
+                                    <div class="col-3">
+                                       <a class="menu-card" href="https://www.jawamotorcycles.com/kommuniti/spares-and-accessories/">
+                                          <img alt="" src="images/menu/spares.png" /> 
+                                          <div class="menu-card-caption">
+                                             <span class="menu-card-link">Spares</span>
+                                          </div>
+                                       </a>                                        
+                                    </div>
+                                    <div class="col-3">
+                                       <a class="menu-card" href="https://www.jawamotorcycles.com/jawayezdiday/">
+                                          <img alt="" src="images/menu/ijyd2019.png" /> 
+                                          <div class="menu-card-caption">
+                                             <span class="menu-card-link">IJYD 2019</span>
+                                          </div>
+                                       </a>                                        
+                                    </div>
+                                    <div class="col-3">
+                                       <a class="menu-card" href="https://www.jawamotorcycles.com/jawayezdiday/">
+                                          <img alt="" src="images/menu/rides.png" /> 
+                                          <div class="menu-card-caption">
+                                             <span class="menu-card-link">Jawa Nomads</span>
+                                          </div>
+                                       </a>                                        
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li><a href="https://www.jawamotorcycles.com/find-a-dealer/">DEALERS</a></li>
+                        <li><a href="https://www.jawamotorcycles.com/delivery-estimator/">DELIVERY ESTIMATOR</a></li>
+                        <li class="sub-menu list"><a href="javascript:void(0)">Your Orders</a>
+                          <div class="arrow-blk">&nbsp;</div>
+                          <div class="sub-menu-wrapper list">
+                             <ul>
+                               <li><a href="https://www.jawamotorcycles.com/perak-your-order-verification/">perak</a></li>
+                               <li><a href="https://www.jawamotorcycles.com/kommuniti/my-account/my-orders/">Jawa and JAWA FORTY TWO</a></li>
+                             </ul>
+                           </div>
+                        </li>
+                        <li class="sub-menu list only-mobile"><a href="javascript:void(0)">Our Motorcycles</a>
+                          <div class="sub-menu-wrapper list">
+                             <ul>
+                                <li><a href="javascript:void(0)">Jawa</a></li>
+                                <li><a href="javascript:void(0)">Jawa forty Two</a></li>
+                                <li><a href="javascript:void(0)">Jawa Perak</a></li>
+                                <li><a href="javascript:void(0)">Jawa 90th Anniversary Edition</a></li>
+                             </ul>
+                           </div>
+                        </li>
+                        <li class="sub-menu list only-mobile"><a href="javascript:void(0)">Other Links</a>
+                          <div class="sub-menu-wrapper list">
+                             <ul>
+                                <li><a href="javascript:void(0)">Gear</a></li>
+                                <li><a href="javascript:void(0)">Legacy</a></li>
+                                <li><a href="javascript:void(0)">Kommuniti</a></li>
+                                <li><a href="javascript:void(0)">News</a></li>
+                                <li><a href="javascript:void(0)">Dealers</a></li>
+                                <li><a href="javascript:void(0)">Contact us</a></li>
+                             </ul>
+                           </div>
+                        </li>
+                        <li class="sub-menu list only-mobile"><a href="javascript:void(0)">Legal</a>
+                          <div class="sub-menu-wrapper list">
+                             <ul>
+                                <li><a href="javascript:void(0)">Terms and conditions</a></li>
+                                <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                                <li><a href="javascript:void(0)">Disclaimer</a></li>
+                             </ul>
+                           </div>
+                        </li>
+                        <li class="button button-tertiary"><a href="javascript:void(0)">Book your Perak</a></li>
+                     </ul>
+                     <div class="mobile-top-links">
+                        <div class="button  button-tertiary"><a href="javascript:void(0)">Book your Perak</a></div>
+                     </div>
+                  </div>
+               </div>
+              </div>
+              <ul class="topNav ">
+                <li class="user-click drop-menu">
+                  <a href="javascript:void(0)"><i class="fa fa-user"></i></a> 
+                  <ul class="drop-container">
+                     <li><a href="signin.html">Sign in</a></li>
+                     <li><a href="signup.html">Sign up</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </header>
+			<div class="container">
+				<h1>Home Page</h1>
+				<div class="column-card row">
+	                <div class="col-4">
+	                  <a href="#" class="cards">
+	                    <div class="border-red xs-hide cards-image">
+	                      <img src="https://storage.googleapis.com/jawaprod2/uploads/media/press_release/landing_image/61/Jawa-Action-141142.jpg" alt="Jawapress">
+	                      <div class="button button-primary"><span class="card-btn">Read more</span></div>
+	                    </div>
+	                    <div class="cards-content">
+	                      <h6>16 November, 2018 / Economic Times</h6>
+	                      <h4>Mahindra revives classic Jawa brand with 3 new motorcycles starting at ₹1.55 lakh</h4>
+	                    </div>
+	                  </a>
+	                </div>
+	                <div class="col-4">
+	                  <a href="#" class="cards">
+	                    <div class="border-red xs-hide cards-image">
+	                      <img src="https://storage.googleapis.com/jawaprod2/uploads/media/press_release/landing_image/63/jawa-motorcycles_660_111518015204.jpg" alt="Jawapress">
+	                       <div class="button button-primary"><span class="card-btn">Read more</span></div>
+	                    </div>
+	                    <div class="cards-content">
+	                      <h6>15 November, 2018 / Drive Spark</h6>
+	                      <h4>New Jawa, Jawa 42, Perak Motorcycles India-Launch Highlights</h4>
+	                    </div>
+	                  </a>
+	                </div>
+	                <div class="col-4">
+	                  <a href="#" class="cards">
+	                    <div class="border-red xs-hide cards-image">
+	                      <img src="https://storage.googleapis.com/jawaprod2/uploads/media/press_release/landing_image/64/Jawa-.jpg" alt="Jawapress">
+	                       <div class="button button-primary"><span class="card-btn">Read more</span></div>
+	                    </div>
+	                    <div class="cards-content readmore-content">
+	                      <h6>15 November, 2018 / Over Drive</h6>
+	                      <h4>Jawa motorcycles launches the Jawa and Jawa forty two at ₹1.64 lakh and ₹1.55 lakh</h4>
+	                    </div>
+	                  </a>
+	                </div>
+	            </div>
+			</div>
+			<footer>
+              <div class="perak-footer-style">
+                <div class="footerWrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-8">
+                              <div class="d-flex">
+                                  <ul>
+                                    <li><span class="eyebrow">Our Motorcycles</span></li>
+                                    <li><a href="https://www.jawamotorcycles.com/motorcycles/jawa/">Jawa</a></li>
+                                    <li><a href="https://www.jawamotorcycles.com/motorcycles/jawa-forty-two/">Jawa forty Two</a></li>
+                                    <li><a href="https://www.jawamotorcycles.com/motorcycles/jawa-perak/">Jawa Perak</a></li>
+                                  </ul>
+                                  <ul>
+                                    <li><span class="eyebrow">Other Links</span></li>
+                                    <li><a href="https://www.jawamotorcycles.com/gear/">Gear</a></li>
+                                    <li><a href="https://www.jawamotorcycles.com/kommuniti/">Kommuniti</a></li>
+                                    <li><a href="https://www.jawamotorcycles.com/legacy/"	>Legacy</a></li>
+                                    <li><a href="https://www.jawamotorcycles.com/news-article/">News</a></li>
+                                    <li><a href="https://www.jawamotorcycles.com/find-a-dealer/">Dealers</a></li>
+                                    <li><a href="https://www.jawamotorcycles.com/contact-us/">Contact</a></li>
+                                  </ul>
+                                  <ul>
+                                    <li><span class="eyebrow">Legal</span></li>
+                                    <li><a href="https://www.jawamotorcycles.com/terms-of-use/">Terms of use</a></li>
+                                    <li><a href="https://www.jawamotorcycles.com/privacy-policy/">Privacy Policy</a></li>
+                                    <li><a href="https://www.jawamotorcycles.com/disclaimer/">Disclaimer</a></li>
+                                  </ul>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="footer-social">
+                                <ul>
+                                    <li><a target="_blank" href="https://www.facebook.com/jawamotorcycles"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a target="_blank" href="https://www.instagram.com/jawamotorcycles"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a target="_blank" href="https://twitter.com/jawamotorcycles"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a target="_blank" href="https://www.youtube.com/jawamotorcycles"><i class="fa fa-youtube"></i></a></li>
+                                </ul>
+                              </div>
+                                <span class="eyebrow">Subscribe</span>
+                                <p>Sign up to receive our newsletter to stay updated on all the news at Jawa Motorcycles.</p>
+                                <div class="form-wrap perak-g perak-form-style">
+                                  <div class="form-field">
+                                    <label class="floating-item-v2" data-error="Please enter your Email">
+                                      <input type="text" class="floating-item-v2-input input-item" value="" />
+                                      <span class="floating-item-v2-label"><span class="enter">Enter</span> your email address</span>
+                                    </label>
+                                    <div class="error-message" id="err_firstname">
+                                      <div class="d-flex">
+                                        <i class="fad fa-exclamation-triangle"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="perak button button-tertiary"><a href="JavaScript:Void(0);">sign me up!</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                  <div class="copy-write">
+                        <div class="row">
+                            <div class="col-9">
+                               <span class="eyebrow">©copyright 2019 CLASSIC LEGENDS private limited. ALL RIGHTS RESERVED.</span>
+                            </div>
+                            <div class="col-3">
+                                <span class="eyebrow">Powered by <a href="#">Made By Fire</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </footer>
+		</div>	
+	  	<script>
+		  	var jsArr = ['js/app.js'];
+			for(var j = 0; j < jsArr.length; j++) {
+		        var script = document.createElement('script')
+		        script.setAttribute('type', 'text/javascript')
+		        script.setAttribute('src', jsArr[j])
+		        document.getElementsByTagName('head')[0].appendChild(script)
+		    }
+	    </script>
+	</body>
+</html>

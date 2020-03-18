@@ -1,0 +1,150 @@
+/////////////////
+// Font-family
+////////////////
+$relative-path: '/html';
+/*$relative-path: '/static';*/
+
+/* Colors */
+$auchico:#9d566a;
+$primary-black: #353432;
+$text-copy: #171614;
+$custom-grey: #ADA38F;
+$custom-pink: #AC142D;
+$custom-pink2: #7A0518;
+
+$white: #ffffff;
+$black: #000;
+$body-bg: #C1B59A;
+$secondary-blue:#27486b; 
+$body-bg-new: #f7f6f4;
+$cardinal: #AD1831;
+$pampas:#F8F7F4;
+$custom-sandle:#f7f5f3;
+$grey-border:#e5e5e5;
+$grey-dark:#413d3a;
+$tab-grey: #E9E6E1;
+$dark-sand:#b0a48e;
+$p-text:#434343;
+$cornflowerblue:#151a1d;
+$gray:#413d3a;
+$dark-grey:#413d3a;
+$facebook-bg:#39589b;
+$googleplus-bg:#de432f;
+$datepicker-calenderBg:#de432f;
+$dawn:#de432f;
+$lightGrey:#e5e4e2;
+$light-wood:#eeede9;
+$custom-brown:#afa59b;
+$tamarillo:#a2182f;
+$custom-tag:#b2aa97;
+$light-card:#edece8;
+$dealer-grey:#3f3f3f;
+$llgrey:#d3d3d3;
+$popup-bg: #f9f8f4;
+$h-line:#f4f4f4;
+$thunder:#231F20;
+$napa:#aea38f;
+$chicago:#5b5a58;
+$silver: #cccccc;
+$bahamablue:#25597f;
+$blackmagic:#292428;
+$vulcan:#36383c;
+$perak-primary:#d7d5d5;
+$perak-secondary:#9e785c;
+$perak-grey:#424744;
+$perak-line:#c3a691;
+$perak-pink:#b30c5e;
+$perak-gold:#837552;
+$perak-bg:#070505;
+$perak-degree:#020001;
+$perak-separator-line:#211b17;
+$perak-form-line:#424040;
+$perak-form-error:#FE0000;
+$perak-form-error-bg:#F0DEDD;
+$perak-eyebrow:#686766;
+$perak-drop-bg:#1C1A19;
+$perak-inactive:#716E6E;
+$cris-pedge: #EFEFEF ;
+$approx:#ECECEC;
+$smart-line: #979797;
+$vivid-red: #AC142D;
+$trout:#4B4E50;
+$gray-suit:#939090;
+$matter-corn: #585656;
+$lazy-gray: #848484; 
+$gray-88: #d1d1d1;
+
+$footer-line:#191919;
+
+/*form color*/
+$error-color:#aa142d;
+$charcoal:#343331;
+$fm-border-color:#dad5cf;
+$dim-grey:#a8162d;
+$creamBg:#f8f7f5;
+$fm-focus-outline:#dad6cd;
+$fm-flt-label-color:#383735;
+$link-color:#aa142d;
+$selectmenuborder:#dad5cf;
+$fm-border-thickness:1px;
+$cararra:#f4f3f1;
+$coolcararra:#eae9e7;
+$tundora:#4c4c4c;
+
+/*bike color*/
+$redBike:#d0011b;
+$blueBike:#4990e2;
+$yellowBike:#f8e71d;
+
+/* Font families */
+$font-stack: 'AvenirNext-Regular', sans-serif;
+$font-aveNext-bold: 'AvenirNext-Bold', sans-serif;
+$font-bernier-dist: 'BERNIERDistressed-Regular', sans-serif;
+$font-christmas-beauty: 'ChristmasBeautyScript', sans-serif;
+$font-bebasneue-light: 'BebasNeueLight', sans-serif;
+$font-bebasneue-book: 'BebasNeueBook', sans-serif;
+$font-awesome-line: 'lineAwesome', sans-serif;
+$font-Avenir-Light: 'Avenir-Light', sans-serif;
+$font-Salome-Stencil: 'Salome-Stencil', sans-serif;
+$font-Vesterbro: 'Vesterbro-PosterItalic', sans-serif;
+$font-Salome-Italic: 'Salome-Italic', sans-serif;
+$font-Avenir-Bold: 'Avenir-Bold', sans-serif;
+$font-Avenir-Black: 'Avenir-Black', sans-serif;
+$font-Metropolis-Regular: 'Metropolis-Regular', sans-serif;
+$font-Montserrat-Bold: 'Montserrat-Bold', sans-serif;
+$font-Montserrat-Regular : 'MontserratRegular', sans-serif;
+$font-Montserrat-Medium : 'Montserrat-Medium', sans-serif;
+$font-Montserrat-SemiBold : 'Montserrat-SemiBold', sans-serif;
+
+$font-awesome:'FontAwesome';
+
+
+/* Font sizes */
+$font-xs: 10px;
+$font-xs1: 11px;
+$font-sm: 12px;
+$font-md: 14px;
+$font-md2: 16px;
+$font-md3: 18px;
+$font-lg: 20px;
+$font-lg1: 21px;
+$font-lg2: 22px;
+$font-lg3: 24px;
+$font-lgc3: 26px;
+$font-lg4: 28px;
+$font-plg2: 32px;
+$font-plg3: 36px;
+$font-plg4: 40px;
+$font-clg3: 42px;
+$font-clg4: 45px;
+$font-dlg3: 60px;
+$font-ell:80px;
+$font-rg3: 82px;
+$font-mlg3: 86px;
+$font-elg3: 120px;
+
+/* Viewport sizes */
+$tab-landscape: 1024px;
+$tab-portrait: 768px;
+$mob-landscape: 568px;
+$mob-portrait: 414px;
