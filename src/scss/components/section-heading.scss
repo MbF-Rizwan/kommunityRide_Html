@@ -1,0 +1,255 @@
+.section-heading {
+	padding: 40px 0px;
+	overflow: hidden;
+	text-align: center;
+	&.news-heading {
+		background-color: $white;
+		position: relative;
+		padding: 150px 0px;
+		h2 {
+			padding-bottom: 60px;
+		}
+		h3 {
+			margin-top: -130px;
+		}
+	}
+	&.horizontal-shuffle {
+		padding: 100px 0px;
+	}
+	&.horizontal-image-caption {
+		padding: 100px 0px;
+	}
+	&.shuffle-heading {
+		padding: 100px 0px;
+	}
+	&.spec-heading {
+		padding: 100px 0 80px !important;
+	}
+	&.expand-heading {
+		h2 {
+			width: 100%;
+		}
+	}
+	&.heading-left{
+		text-align: left;
+		padding: 20px 0px;		
+		h3{
+			text-align: left;
+		    margin-top: -70px;
+		}
+		p{
+			max-width: 100%;
+			margin: -10px auto 0;
+		}
+		h1,h2{	
+			margin: auto;
+			width: auto;
+		}
+	}
+	h1,h2{		
+		color: $primary-black;
+		font-family: $font-bernier-dist;
+		font-size: 60px;
+		letter-spacing: -2px;
+		line-height: 1;
+		position: relative;
+		text-transform: lowercase;
+		width: 780px;
+		margin: 0 auto;
+		z-index: 1;
+	}
+	h3 {
+		color: $custom-grey;
+		font-family: $font-christmas-beauty;
+		font-size: 90px;
+		letter-spacing: 6px;
+		line-height: 1;
+		margin-top: -60px;
+		opacity: 0.08;
+		position: relative;
+		text-transform: lowercase;
+		white-space: nowrap;
+    	text-align: center;
+    	margin-bottom: 0px;
+    	padding-bottom: 0px;
+	}
+	p {
+		font-size: $font-md3;
+		line-height: 32px;
+		margin: -15px auto 0px;
+		max-width: 600px;
+	}
+
+	&.bg-heading {
+		background: {
+			image: url(#{$relative-path}/images/headingpattern.png);
+			size: 135px;
+			repeat: repeat;
+		}
+	}
+}
+.step{
+	opacity: 0;
+	display: none;
+	background-color: $white;
+	padding: 50px 0px;
+	p{
+		display: inline-block;
+	}
+	&.active{
+		animation: example 0.4s ease-in-out;
+		opacity: 1;
+		display: block;
+	}
+	h5 {
+		padding-bottom: 10px;
+	}
+}
+.heading-flow{
+	display: none;
+	text-align: center;
+	&.active{
+		animation: example 0.4s ease-in-out;
+		opacity: 1;
+		display: block;
+	}
+}
+.user-flow{
+	overflow: hidden;
+}
+
+@keyframes example {
+    0%   {
+    	@include transform(translateX(50%));
+    	opacity: 0;
+    }
+    10%  {
+    	@include transform(translateX(45%));
+    	opacity: 0.10;
+    }
+    20%  {
+    	@include transform(translateX(40%));
+    	opacity: 0.20;
+    }
+    30% {
+    	@include transform(translateX(35%));
+    	opacity: 0.30;
+    }
+    40% {
+    	@include transform(translateX(30%));
+    	opacity: 0.40;
+    }
+    50%   {
+    	@include transform(translateX(25%));
+    	opacity: 0.50;
+    }
+    60%  {
+    	@include transform(translateX(20%));
+    	opacity: 0.60;
+    }
+    70%  {
+    	@include transform(translateX(15%));
+    	opacity: 0.70;
+    }
+    80% {
+    	@include transform(translateX(10%));
+    	opacity: 0.80;
+    }
+    90% {
+    	@include transform(translateX(5%));
+    	opacity: 0.90;
+    }
+    100% {
+    	@include transform(translateX(0%));
+    	opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+	.section-heading {
+		&.news-heading {
+			padding-top: 70px;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.section-heading {
+		h2,h1{
+			width: 100%;
+		}
+		p{
+			padding: 0px 15px;
+		}
+		&.spec-heading {
+			padding: 50px 0 40px !important;
+		}
+		&.heading-left p {
+			padding: 0px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.section-heading{
+		padding: 35px 0px 30px;
+		overflow: hidden;
+		h1,h2 {
+			font-size: 80px;
+		}
+		p{
+			font-size: $font-lg2;
+    		line-height: 38px;
+    		width: 100%;
+		}
+		&.news-heading {
+			background-color: initial;
+			padding: 35px 0px 30px;
+			h3 {
+				line-height: 120px;
+				margin-top: -110px;
+			}
+			h2 {
+				padding-bottom: 0px;
+			}
+		}
+	}
+	.step {
+		padding: 35px 0px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.section-heading{
+		h1,h2 {
+			font-size: 60px;
+    		padding-bottom: 0px;
+		}
+		h3{
+			margin-top: -85px;
+		    font-size: 114px;
+		    line-height: 97px;
+		}
+		p{
+			font-size: $font-md3;
+    		line-height: 35px;
+    		padding: 20px 15px;
+			margin: 0 auto;
+		}
+		&.shuffle-heading {
+			padding-bottom: 0px;
+			h3{
+			    margin-top: -90px;
+			    font-size: 120px;
+			    line-height: 120px;
+			}
+		}
+		&.heading-left{	
+			h3{
+				line-height: 1;
+			}
+			p{
+				margin: 0 auto;
+			}
+		}
+	}
+}

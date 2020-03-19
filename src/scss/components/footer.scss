@@ -118,6 +118,38 @@ footer{
 	}*/
 }
 .perak{
+	&.button{
+	    &.button-tertiary{
+	    	min-width: 200px;
+	    	button,a,.text{
+		    	min-height: 40px;
+	    		border: 1px solid $perak-secondary;
+			    background: $perak-secondary;
+			    color: $white;
+			    padding: 10px 0;
+			    font-size: 11px;
+    			line-height: 17px;
+    			font-family: $font-Montserrat-Bold;
+    			letter-spacing: normal;
+    			text-transform: uppercase;
+	    	}
+	    	.loader{
+	    		color: $white;
+	    		display: none;
+	    	}
+	    	&.inactive{
+	    		button,a,.text{
+		    		background: $perak-form-line;
+		    		color: $perak-inactive;
+		    		cursor: default;
+		    		border-color: $perak-form-line;
+		    		&:hover{
+		    			opacity: 1;
+		    		}
+	    		}
+	    	}
+	    }
+    }
 	&-footer-style{
     	.footerWrapper{
     		padding-top: 10px;
@@ -209,6 +241,316 @@ footer{
     		}
     	}
     }
+    &-form-style{
+    	.form-field{
+    		&-otp{
+    			@include display-flex;
+    			@include justify-content(space-between);
+    			width: 200px;
+    			margin-bottom: 17px;
+    			input{
+    				width: 40px;
+    				background: transparent;
+    				color: $perak-secondary;
+    				border: 0;
+    				border-bottom: 2px solid $perak-secondary;
+    				text-align: center;
+    				padding: 10px;
+    				font-family: $font-Montserrat-Bold;
+    				font-size: 14px;
+    				line-height: 20px;
+    			}
+    		}
+	    	input{
+	    		border: 0;
+	    		border-bottom: 2px solid $perak-form-line;
+	    		color: $perak-primary;
+			    font-family: $font-Montserrat-Regular;
+			    font-size: 14px;
+			    line-height: 24px;
+			    padding: 11px 0 7px;
+			    background: $perak-bg;
+	    		&:focus{
+	    			color: $perak-secondary;
+	    			border-color: $perak-secondary;
+		    		& ~ .floating-item-v2-label{
+			    		font-family: $font-Montserrat-Bold;
+		    			color: $perak-secondary;
+		    			background: transparent;
+		    			font-size: 9px;
+			    		line-height: 15px;
+			    		padding: 0;
+
+		    		}
+		    		& ~ .pre-value{
+		    			color: $perak-secondary;
+		    			opacity: 1;
+		    		}
+		    		& ~ .floating-item-v2-label{
+		    			.enter{
+		    				display: none;
+		    			}
+		    		}
+	    		}
+	    		&:-webkit-autofill, &:-webkit-autofill:hover, &:-webkit-autofill:focus, &:-webkit-autofill:active{
+	    			 -webkit-box-shadow: 0 0 0 40px $perak-bg inset !important;
+	    			 -webkit-text-fill-color: $perak-primary !important;
+	    		}
+	    	}
+	    	.floating-item-v2-label.active{
+	    		font-family: $font-Montserrat-Bold;
+    			color: $perak-secondary;
+    			background: transparent;
+    			font-size: 9px;
+	    		line-height: 15px;
+	    		padding: 0;
+	    		text-transform: uppercase;
+
+    		}
+	    	.input-animate{
+	    		&:after{
+	    			width: 100%;
+				    @include transition(all 0.2s ease-in-out);
+	    		}
+	    	}
+	    	a{
+				padding: 0;
+				position: relative;
+			    &:after{
+	                content: "";
+	                position: absolute;
+	                height: 2px;
+	                width: 0;
+	                background-color: $perak-secondary;
+	                bottom: 0;
+	                left: 50%;
+	                @include transform(translateX(-50%));
+	                @include transition(all .2s ease-in-out);
+	            }
+	            &:hover{
+	                &:after{
+	                    width: 100%;
+	                    @include transition(all .2s ease-in-out);
+	                }
+	            }
+			}
+	    	label{
+	    		&:after{
+	    			content:'';
+	    			position: absolute;
+				    height: 2px;
+				    width: 0;
+				    background-color: #9e785c;
+				    bottom: 0;
+				    left: 50%;
+				    @include transform(translateX(-50%));
+				    @include transition(all 0.2s ease-in-out);
+	    		}
+	    	}
+	    	.default-number{
+	    		input{
+	    			padding-left: 30px;
+	    		}
+	    	}
+	    	.pre-value{
+	    		position: absolute;
+	    		bottom: 9px;
+	    		opacity: 0;
+	    	}
+	    	.checkboxradio{
+    			&-label{
+    				font-family: $font-Montserrat-Regular;
+    				color: $perak-primary;
+    				font-size: 14px;
+    				line-height: 24px;
+    				padding-left: 30px;
+    				&:before{
+    					height: 18px;
+    					width: 18px;
+    					background: transparent;
+    					border: 2px solid $perak-secondary;
+    				}
+    			}
+    			&-item:checked ~ .checkbox-label{
+    				&:before{
+    					background: $perak-secondary;
+    				}
+	    			&:after{
+	    				background: transparent;
+	    				top: 11px;
+					    left: 4px;
+					    border-right: 2px solid $white;
+					    border-bottom: 2px solid $white;
+	    			}
+    			}
+
+	    	}
+	    	.input-email-active ~ .floating-item-v2-label{
+	    		padding: 0;
+	    		font-size: 9px;
+		    	line-height: 15px;
+		    	font-family: $font-Montserrat-Bold;
+		    	color: $perak-eyebrow;
+		    	background: transparent;
+		    	text-transform: uppercase;
+		    	.enter{
+    				display: none;
+    			}
+	    	}
+	    	.input-email-active ~ .pre-value{
+    			opacity: 1;
+    		}
+	    	.custom-dropdown{
+	    		background: transparent;
+	    		.dropdown-btn{
+	    			padding: 6px 0;
+	    			border-bottom: 2px solid $perak-form-line; 
+	    			overflow: visible;
+	    			&:after{
+	    				color: $perak-secondary;
+	    			}
+	    		}
+	    		.selected-text{
+	    			color: $perak-primary;
+	    			text-transform: capitalize;
+	    		}
+	    		.category-list{
+	    			top: 45px;
+	    			background: $perak-drop-bg;
+	    			padding: 0;
+	    			ul{
+	    				border: 0;
+	    				&::-webkit-scrollbar {
+    						display: block;
+						  	width: 6px;
+						}
+						 
+						&::-webkit-scrollbar-track {
+						  	background-color: $perak-secondary;
+						  	border-radius: 2px;
+						}
+						 
+						&::-webkit-scrollbar-thumb {
+						  	border-radius: 2px;
+						  	background: $white;
+						}
+						&::-webkit-scrollbar-button {
+						    display: none;
+						}
+	    			}
+	    			li{
+	    				padding: 10px 0;
+	    				margin: 0 10px;
+	    				text-transform: capitalize;
+	    				border-bottom: 1px solid $perak-form-line;
+	    				&:last-child{
+	    					border-bottom: 0;
+	    				}
+	    				&:hover{
+	    					a{
+	    						&:after{
+	    							width: 100%;
+	    						}
+    							
+	    					}
+	    				}
+	    			}
+	    			a{
+	    				color: $perak-secondary;
+					    font-family: $font-Montserrat-Bold;
+					    font-size: 11px;
+					    line-height: 17px;
+	    				text-transform: uppercase;
+	    				position: relative;
+	    				padding: 0;
+	    				&:after{
+	    					content: "";
+						    position: absolute;
+						    height: 2px;
+						    width: 0;
+						    background-color: #9e785c;
+						    bottom: 0;
+						    left: 50%;
+						    @include transform(translateX(-50%));
+						    @include transition(all 0.2s ease-in-out);
+	    				}
+
+	    			}
+	    		}
+	    		&.open{
+	    			.dropdown-btn{
+	    			border-bottom: 2px solid $perak-secondary;
+	    			}
+	    		}
+	    		.perak-placeholder{
+	    			&.active{
+	    				font-size: 9px;
+					    line-height: 15px;
+					    font-family: $font-Montserrat-Bold;
+					    color: $perak-eyebrow;
+					    text-transform: uppercase;
+					    letter-spacing: 2px;
+					    position: absolute;
+					    top: -10px;
+						@include transition-event(all, 0.15s, ease-in);
+	    			}
+	    		}
+	    	}
+    		.custom-dropdown .placeholder,span{
+    			left: 0;
+    			color: $perak-primary;
+			    font-family: $font-Montserrat-Regular;
+			    font-size: 14px;
+			    line-height: 24px;
+			    text-transform: initial;
+    		}
+	    	.error-message{
+	    		background: $perak-form-error-bg;
+	    		font-family: $font-Montserrat-Medium;
+	    		color: $perak-form-error;
+	    		letter-spacing: normal;
+	    		text-transform: initial;
+	    		font-size: 12px;
+	    		line-height: 18px;
+	    		border-top: 2px solid $perak-form-error;
+			    position: relative;
+			    top: -2px;
+	    		i{
+		    		font-style: normal;
+		    		font-family: $font-awesome;
+		    		font-size: 30px;
+		    		line-height: 36px;
+		    		margin-right: 10px;
+		    		position: relative;
+		    		top: -3px;
+		    	}
+	    	}
+	    	.error-message{
+    			.d-flex{
+    				@include align-items(center);
+    				@include justify-content(inherit);
+    			}
+	    	}
+	    	&.error-row{
+	    		input{
+					border: 0;
+		    		border-bottom: 2px solid $perak-form-error;
+	    		}
+	    	}
+    	}
+    }
+}
+
+@media screen and (max-width:1099px){
+	.perak{
+		&-footer-style{
+    		.footerWrapper{
+    			.col-8{
+    				display: none;
+    			}
+    		}
+    	}
+	}
 }
 @media screen and (max-width:768px){
 	footer{
@@ -230,6 +572,37 @@ footer{
 			text-align: center;
 			.fa{
 				left: 0px;
+			}
+		}
+	}
+	.perak{
+		&-footer-style{
+			.footerWrapper{
+				text-align: left;
+			}
+			.footer-social{
+				ul{
+					column-count: inherit;
+					padding-top: 0;
+					margin-bottom: 15px;
+				}
+				li{
+					width: initial;
+				}
+			}
+			.copy-write{
+				text-align: left;
+				border-top: 1px solid $footer-line;
+				.col-3{
+    				text-align: left;
+    				padding-top: 5px;
+    			}
+    			.row{
+    				padding-top: 22px;
+    			}
+			}
+			.button-tertiary{
+				margin-bottom: 17px;
 			}
 		}
 	}

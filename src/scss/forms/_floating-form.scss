@@ -1,0 +1,202 @@
+.floating-item {
+	display: block;
+	position: relative;
+	&-input {
+		border:2px solid $fm-border-color;
+		@include transition-event(border, 0.25s, ease-in);
+		padding:15px;
+		width: 100%;
+		box-shadow: none;
+		background-color:transparent;
+		margin-bottom: 0px;
+		&:focus {
+			border-color:$black;
+			color: $black;
+			background-color: transparent;
+		}
+	}
+
+	&-input:focus ~ &-label {
+		color:$fm-focus-outline;
+	}
+	&-input:focus ~ .floating-item-label, .floating-item-input:valid ~ .floating-item-label, .input-email-active ~ .floating-item-label, .hasValue{
+		line-height: 16px;
+		top:-11px;
+	}
+	&-label {
+		@include transition-event(all, 0.15s, ease-in);
+		color: $black;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font:{
+			size:$font-sm;
+			family:$font-aveNext-bold;
+		}
+		line-height: 16px;
+		display:block;
+    	margin-bottom: 6px;
+	}
+	&-icon {
+		color: $fm-flt-label-color;
+		font-size: $font-lg;
+		line-height: 20px;
+		left:15px;
+		position: absolute;
+		top:14px;
+	}
+	.mandatory{
+		color: $error-color;
+	}
+}
+.floating-item-v2 {
+	display: block;
+	position: relative;
+	/*margin: 0;*/
+	/*&:before{
+		background-color: #aaa;
+		content: "";
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		width: 0;
+		height: 1px;
+		@include transform(translateX(-50%));
+		@include transition-event(all, 300ms, ease-in);
+	}*/
+	&.input-animate{
+		&:before{
+			width: 100%;
+		}
+	}
+	&-input {
+		@include transition-event(border, 0.25s, ease-in);
+		/*padding:4px 0 4px 0;*/
+		padding: 15px;
+		width: 100%;
+		background-color: transparent;
+		border: 2px solid white;
+		&:focus {
+			/*border-color:black;*/
+		}
+	}
+	&, &-input {
+		font-size:14px;
+	}
+	&-input:focus ~ &-label {
+		color:$fm-focus-outline;
+	}
+	&-input:focus ~ &-label, .input-email-active ~ &-label, &-label.active{
+	    color: $white;
+		top: 2px;
+		letter-spacing:2px;
+		text-transform: uppercase;
+		padding-left: 3px;
+		padding-right: 2px;
+		/*opacity: .8;*/
+	    font-size: 12px;
+	    font-family: $font-aveNext-bold;
+		line-height: 14px;
+		background-color: $secondary-blue;
+	}
+	&-label {
+		@include transition-event(all, 0.15s, ease-in);
+	    color: $white;
+		cursor: text;
+		font-family: $font-aveNext-bold;
+		left: 15px; 
+		position: absolute;
+		top: 50%;
+		@include transform(translateY(-50%));
+        line-height: 27px;
+        text-transform:uppercase;
+        letter-spacing: 0;
+	}
+	&-icon {
+		line-height: 20px;
+		left:15px;
+		position: absolute;
+		top:14px;
+	}
+}
+.subscribe-field {
+	.floating-item-input {
+		background-color: rgba($body-bg, 0.1);
+		border:2px solid transparent;
+		color: $white;
+		font-family: $font-Montserrat-Regular;
+ 		font-size: 14px;
+	}
+	button {
+		cursor: pointer;
+	}
+}
+.input-with-icon .floating-item-input {
+	padding-left: 40px;
+}
+.input-with-icon .floating-item-label {
+	left: 37px;
+}
+
+input[type="file"]{
+	opacity:0;
+	padding: 12px 15px;
+}
+
+input[type="file"],
+.upload-button, .subscribe-button {
+	cursor:pointer;
+	position: absolute;
+	top:50%;
+	width:100%;
+	right:0;
+	@include transform(translateY(-50%));
+}
+.upload-input {
+	.input-item {
+		padding-right: 100px;
+	}
+}
+
+.upload-button, .subscribe-button {
+	border:none;	width:150px;
+	a {	
+		text-align: right;
+	}
+}
+span {
+	sup {
+		font-size: $font-md2;
+		padding-left: 5px;
+	}
+}
+.succes-message {
+	display:none;
+	padding:15px 0 0 0;
+}
+.subscribe-button {
+	background-color:$link-color;
+	.button {
+		background-color:$link-color;
+		color:$white;
+		height:100%;
+		margin:0;
+		min-width:100%;
+		padding:0;
+		@include transition(none);
+	}
+	.preloader {
+		display:none;
+		margin:-17px 0 0 -17px;
+		position:absolute;
+		left:50%;
+		top:50%;
+	}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type=password] {
+        -webkit-text-stroke-width: .2em;
+        letter-spacing: 0.2em;
+        text-indent:3px;
+    }
+}

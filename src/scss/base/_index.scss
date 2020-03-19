@@ -121,6 +121,9 @@ html {
 .section-padding {
     padding-bottom: 40px;
 }
+.section-init {
+    padding-top: 30px;
+}
 .pt5{
     padding-top: 5px;
     width: 100%;
@@ -438,6 +441,11 @@ h6 {
 @media (min-width: 1200px) {
     .container {
         max-width: 1200px !important;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100% !important;
     }
 }
 

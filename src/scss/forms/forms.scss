@@ -1,0 +1,93 @@
+// Form common
+.form-field {
+	margin-bottom: 30px;
+	&.error-row{
+		.floating-item-input,.floating-item-v2-input{
+			border:2px solid $error-color;
+		}
+		.error-message{
+			display:block;
+		}
+		.floating-item-label,
+		.floating-item-input:focus ~ .floating-item-label,{
+			color:$error-color;
+		}
+	}
+	.error-message{
+		background-color:$error-color;
+		color:$white;
+		display: none;
+		font-size:$font-sm;
+		font-family:$font-aveNext-bold;
+		padding:10px;
+		text-transform:uppercase;
+		letter-spacing: 2px;
+		width: 100%;
+	}
+	&.subscribe-field {
+		margin-bottom: 0px;
+		padding: 0px;
+		position: relative;
+		button {
+			background-color: $perak-secondary;
+			border: 0px;
+			@include width-height(60px, 58px);
+			@include position(absolute, $top: 0px, $right: 0px);
+			i {
+				color: $perak-primary;
+				font-size: 24px;
+			}
+		}
+		.error-message{ 
+			position: relative;
+			z-index: 9;
+		}
+	}
+	&.error-row {
+		button {
+			border: 2px solid $custom-pink;
+		}
+	}
+}
+.timing {
+	.error-message { 
+		margin: 0 15px;
+	}
+}
+.input-item {
+	display: block;
+	font-family: $font-stack;
+	margin-bottom: 0px;
+	font:{
+		size:$font-md3;
+	}
+	line-height: 24px;
+	width: 100%;
+	color:$primary-black;
+}
+.info-message{
+	display: block;
+	padding-bottom:20px;
+}
+.browse-btn {
+	display: block;
+	position: relative;
+}
+.load-content {
+	display:none;
+	&:first-child {
+		display: block;
+	}
+}
+
+@media screen and (max-width:767px){
+	.form-field {
+		&.subscribe-field {
+		    max-width: 640px;
+    		margin: 0 auto 10px;
+		}
+		.button {
+			margin-bottom: 15px;
+		}
+	}
+}

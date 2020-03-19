@@ -1,4 +1,6 @@
 .button{
+    display: inline-block;
+    position: relative;
     .card-btn, button,a{
         background-color: transparent;
         border: 3px solid $custom-pink;
